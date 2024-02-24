@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9B Skins Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>B9B Skins Game</h1>
+        <form id="skinsForm">
+          <div class="inline-fields">
+        <div class="form-group">
+            <label for="gameDate">Date:</label>
+            <input type="date" id="gameDate" name="gameDate" required>
+        </div>
+        <div class="form-group">
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" name="courseName" required>
+        </div>
+    </div>
+            <div class="form-group">
+                <label for="player">Player:</label>
+                <select id="player" name="player">
+                    <option>Select Player</option>
+                    <option>JB</option>
+                    <option>KJ</option>
+                    <option>Mike</option>
+                    <option>Nick</option>
+                    <option>Percy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="holeNumber">Hole #:</label>
+                <input type="number" id="holeNumber" name="holeNumber" min="1" max="18" required>
+            </div>
+            <div class="form-group">
+                <label for="score">Score:</label>
+                <select id="score" name="score">
+                    <option>Score</option>
+                    <option value="Bogey+">Bogey+</option>
+                    <option value="Par">Par</option>
+                    <option value="Birdie">Birdie</option>
+                    <option value="Eagle">Eagle</option>
+                </select>
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+      <div id="earningsTotal"></div>
+<div id="holeResults"></div>
+    </div>
+<button id="emailResults"<a href="mailto:mwforster@yahoo.com" class="email-button">Email Results</a></button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

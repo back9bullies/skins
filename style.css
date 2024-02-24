@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input[type="number"],
+.form-group select {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#submitBtn {
+    background-color: #1ca9c9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block; /* Ensure it's block level for margin to work */
+    margin-bottom: 30px; /* Increased space below the submit button */
+}
+
+#earningsTotal {
+    margin-bottom: 20px; /* Space between earnings total and hole breakdowns */
+}
+
+@media (max-width: 600px) {
+    .form-group input[type="number"],
+    .form-group select {
+        width: 100%;
+    }
+}
+#emailResults {
+    background-color: #1CA9C9; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; 
+    align: left;
+    width: 200px; /* Or any width you prefer */
+}
+.inline-fields {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px; /* Adjust the space between the fields */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+/* Styles for inputs and selects remain the same */
+@media (max-width: 600px) {
+    .inline-fields {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%; /* Ensures full width on smaller screens */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #1CA9C9, #FFFFFF);
+}
